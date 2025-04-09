@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV profesional de Yorkem Zúñiga Mejía - Auxiliar Administrativo y Desarrollador Web Junior">
+    <meta name="keywords" content="CV, desarrollador web, contabilidad, administración, portfolio, Yorkem Zúñiga">
+    <meta name="author" content="Yorkem Zúñiga Mejía">
+    
+    <title>Yorkem Zúñiga | Auxiliar Administrativo & Desarrollador Web Junior</title>
+    
+    <!-- Preconexión para mejorar performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fuentes optimizadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <style>
+        /* Estilos generales mejorados */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #4a6fa5;
+            --accent-color: #e74c3c;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+            --text-color: #333;
+            --text-light: #6c757d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            color: var(--accent-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header mejorado */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 30px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .profile-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .profile-image-wrapper {
+            flex: 0 0 200px;
+        }
+        
+        .profile-pic {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .profile-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .profile-info h1 {
+            color: white;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .job-titles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .job-titles span {
+            background-color: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .contact-info p {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .contact-info a {
+            color: white;
+        }
+        
+        .contact-info a:hover {
+            color: #f8f9fa;
+            text-decoration: underline;
+        }
+        
+        /* Main content */
+        .main-content {
+            padding: 40px 0;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .section h2 i {
+            color: var(--secondary-color);
+        }
+        
+        /* About section */
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .highlight-card {
+            background: var(--light-color);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .highlight-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .highlight-card i {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+        
+        .highlight-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        /* Skills section */
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            list-style: none;
+        }
+        
+        .skills-list li {
+            background: var(--light-color);
+            padding: 12px 20px;
+            border-radius: 5px;
+            position: relative;
+            padding-left: 35px;
+        }
+        
+        .skills-list li::before {
+            content: "✓";
+            color: var(--secondary-color);
+            position: absolute;
+            left: 15px;
+            font-weight: bold;
+        }
+        
+        /* Experience section */
+        .experience-list {
+            list-style: none;
+        }
+        
+        .experience-list > li {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .experience-list > li:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .experience-list h3 {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+        
+        .experience-list > li > p {
+            color: var(--text-light);
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        
+        .experience-list ul {
+            list-style-position: inside;
+            padding-left: 20px;
+        }
+        
+        .experience-list ul li {
+            margin-bottom: 8px;
+        }
+        
+        /* Certificates carousel - ESTA ES LA PARTE QUE MÁS MEJORÉ */
+        .certificates-carousel {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .carousel-track-container {
+            overflow: hidden;
+            position: relative;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .carousel-track {
+            display: flex;
+            height: 100%;
+            transition: transform 0.5s ease;
+        }
+        
+        .carousel-slide {
+            min-width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .carousel-slide img {
+            max-width: 100%;
+            max-height: 400px;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 1px solid #eee;
+        }
+        
+        .carousel-slide figcaption {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.9);
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s ease;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .carousel-control:hover {
+            background: white;
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .carousel-control.prev {
+            left: -25px;
+        }
+        
+        .carousel-control.next {
+            right: -25px;
+        }
+        
+        .carousel-nav {
+            display: flex;
+            justify-content: center;
+            padding: 25px 0 10px;
+            gap: 10px;
+        }
+        
+        .nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ccc;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-dot.active {
+            background: var(--primary-color);
+            transform: scale(1.3);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .social-links a:hover {
+            color: var(--secondary-color);
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .profile-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-image-wrapper {
+                margin-bottom: 20px;
+            }
+            
+            .job-titles {
+                justify-content: center;
+            }
+            
+            .contact-info {
+                justify-content: center;
+            }
+            
+            .section {
+                padding: 25px 20px;
+            }
+            
+            .carousel-track-container {
+                height: 400px;
+            }
+            
+            .carousel-slide img {
+                max-height: 300px;
+            }
+            
+            .carousel-control {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+            
+            .carousel-control.prev {
+                left: -15px;
+            }
+            
+            .carousel-control.next {
+                right: -15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .profile-info h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .carousel-track-container {
+                height: 350px;
+            }
+            
+            .carousel-slide figcaption {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- link para accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="profile-container" itemscope itemtype="http://schema.org/Person">
+                <div class="profile-image-wrapper">
+                    <img src="img/presentacion2.jpg" 
+                         width="200" 
+                         height="200" 
+                         alt="Foto de perfil de Yorkem Zúñiga" 
+                         class="profile-pic"
+                         itemprop="image"
+                         loading="lazy">
+                </div>
+                <div class="profile-info">
+                    <h1 itemprop="name">Yorkem Zúñiga Mejía</h1>
+                    <p class="job-titles">
+                        <span itemprop="jobTitle">Auxiliar Administrativo y Contable</span>
+                        <span itemprop="jobTitle">Desarrollador Web Junior</span>
+                    </p>
+                    
+                    <div class="contact-info">
+                        <p itemprop="email">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:yzmyorkemil@gmail.com">yzmyorkemil@gmail.com -- yorkemjob@gmail.com</a>
+                        </p>
+                        <p itemprop="telephone">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+573113388681">+57 311 338 8681</a>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+573236003261">+57 323 600 3261</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" class="main-content" role="main">
+        <div class="container">
+            <section class="section" id="about" aria-labelledby="about-heading">
+                <h2 id="about-heading"><i class="fas fa-user"></i> <span>Sobre Mí</span></h2>
+                <div class="section-content">
+                    <p>Profesional con <strong>2 años de experiencia</strong> en administración (en negocio familiar), en proceso de transición hacia el desarrollo web.<br>
+                         Combino habilidades organizativas con conocimientos técnicos en programación web para ofrecer soluciones integrales y rapidas, me gusta <br>
+                         medir mi tiempo para poder llevar siempre un esquema mental de las cosas que debo hacer durante el dia y las que quedaran pospuestas para<br>
+                         el siguiente dia, resumiendo me gusta llevar el control, pero me adacto muy bien a situaciones donde no es el caso.</p>
+                    
+                    <div class="highlights-grid">
+                        <article class="highlight-card">
+                            <i class="fas fa-briefcase"></i>
+                            <h3>Experiencia</h3>
+                            <p>->2 años en roles administrativos</p>
+                            <p>->1 año como secretario en IMC (INFANTERIA DE MARINA COLOMBIANA)</p>
+                            <P>->2 ños como panadero y medio año como pastelero</P>
+                        </article>
+                        <article class="highlight-card">
+                            <i class="fas fa-code"></i>
+                            <h3>Desarrollo</h3>
+                            <p>Conocimientos en HTML, CSS, JavaScript (esta página web fue creada con el fin de mostrar un poco de mis capacidades como desarrollador web que apesar de se JUNIOR puedo mejorar y voy a mejorar)</p>
+                        </article>
+                        <article class="highlight-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Educación</h3>
+                            <p>Bachillerato, curso práctico en reparación de equipos móviles Android, curso auxiliar administrativo y contable, marketing, derechos humanos, prevencion de acoso laboral entre otros, al final de la pagina adjunoto los certificados</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="skills" aria-labelledby="skills-heading">
+                <h2 id="skills-heading"><i class="fas fa-code"></i> <span>Habilidades</span></h2>
+                <div class="section-content">
+                    <ul class="skills-list" id="skills-container" role="list">
+                        <li>Rápido aprendizaje y adaptación</li>
+                        <li>Excelente ambiente laboral</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Organización y planificación</li>
+                        <li>Resolución de problemas</li>
+                        <li>puntual en proyectos y trabajos</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section" id="experience" aria-labelledby="experience-heading">
+                <h2 id="experience-heading"><i class="fas fa-briefcase"></i> <span>Experiencia Laboral</span></h2>
+                <div class="section-content">
+                    <ul class="experience-list" role="list">
+                        <li>
+                            <h3>Auxiliar Administrativo y Contable</h3>
+                            <p>Negocio familiar | 2021 - Presente</p>
+                            <ul>
+                                <li>Gestión de inventarios y facturación</li>
+                                <li>auxiliar en Registro de operaciones contables</li>
+                                <li>Atención al cliente</li>
+                                <li>kardex y manejo de excel</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Técnico en Celulares Android</h3>
+                            <p>Freelance | 2020 - 2021</p>
+                            <ul>
+                                <li>Reparación de hardware y software</li>
+                                <li>Mantenimiento preventivo</li>
+                                <li>Asesoría técnica</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECCIÓN DE CERTIFICADOS CON CARRUSEL -->
+            <section class="section" id="certificates" aria-labelledby="certificates-heading">
+                <h2 id="certificates-heading"><i class="fas fa-certificate"></i> <span>Certificados y Diplomas</span></h2>
+                <div class="section-content">
+                    <div class="certificates-carousel">
+                        <button class="carousel-control prev" aria-label="Certificado anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        
+                        <div class="carousel-track-container">
+                            <div class="carousel-track">
+                                <figure class="carousel-slide current-slide">
+                                    <img src="img/amd contables.jpeg" 
+                                         alt="Certificado de Auxiliar Contable y Administrativo"
+                                         loading="lazy">
+                                    <figcaption>Auxiliar Contable y Administrativo</figcaption>
+                                </figure>
+                                
+                                <figure class="carousel-slide">
+                                    <img src="img/dragoneante.jpeg" 
+                                         alt="Certificado Dragoneante"
+                                         loading="lazy">
+                                    <figcaption>Certificado Dragoneante</figcaption>
+                                </figure>
+                                
+                                <figure class="carousel-slide">
+                                    <img src="img/derechos.jpeg" 
+                                         alt="Diploma en Derechos Humanos"
+                                         loading="lazy">
+                                    <figcaption>Diploma en Derechos Humanos</figcaption>
+                                </figure>
+                                
+                                <figure class="carousel-slide">
+                                    <img src="img/marketing.jpeg" 
+                                         alt="Certificado en Marketing"
+                                         loading="lazy">
+                                    <figcaption>Certificado en Marketing</figcaption>
+                                </figure>
+                                
+                                <figure class="carousel-slide">
+                                    <img src="img/acoso.jpeg" 
+                                         alt="Certificado en Prevención de Acoso"
+                                         loading="lazy">
+                                    <figcaption>Prevención de Acoso</figcaption>
+                                </figure>
+                                
+                                <figure class="carousel-slide">
+                                    <img src="img/celulares.jpeg" 
+                                         alt="Certificado Técnico en Celulares Android"
+                                         loading="lazy">
+                                    <figcaption>Técnico en Celulares Android</figcaption>
+                                </figure>
+                                
+                                <figure class="carousel-slide">
+                                    <img src="img/icfes.jpeg" 
+                                         alt="Resultados ICFES"
+                                         loading="lazy">
+                                    <figcaption>Resultados ICFES</figcaption>
+                                </figure>
+                                
+                                <figure class="carousel-slide">
+                                    <img src="img/certificado.jpeg"
+                                         alt="Certificado"
+                                         loading="lazy">
+                                    <figcaption>Certificado</figcaption>
+                                </figure>
+                                
+                                <figure class="carousel-slide">
+                                    <img src="img/INTRODUCCION HTML.jpg"
+                                         alt="Introducción HTML"
+                                         loading="lazy">
+                                    <figcaption>Introducción HTML</figcaption>
+                                </figure>
+                                
+                                <figure class="carousel-slide">
+                                    <img src="img/CSS BASICO.jpg"
+                                         alt="CSS básico"
+                                         loading="lazy">
+                                    <figcaption>CSS básico</figcaption>
+                                </figure>
+                                
+                                <figure class="carousel-slide">
+                                    <img src="img/HTML CREACION DE PAGINAS WEB.jpg"
+                                         alt="HTML creación de páginas web"
+                                         loading="lazy">
+                                    <figcaption>HTML creación de páginas web</figcaption>
+                                </figure>
+                                
+                                <figure class="carousel-slide">
+                                    <img src="img/HTML BOOTSTRAP.jpg"
+                                         alt="HTML bootstrap"
+                                         loading="lazy">
+                                    <figcaption>HTML bootstrap</figcaption>
+                                </figure>
+                                
+                                <figure class="carousel-slide">
+                                    <img src="img/PRESENTACIONES EFECTIVAS.jpg"
+                                         alt="Presentaciones efectivas"
+                                         loading="lazy">
+                                    <figcaption>Presentaciones efectivas</figcaption>
+                                </figure>
+                                
+                                <figure class="carousel-slide">
+                                    <img src="img/ANALISIS FINANCIERO.jpg"
+                                         alt="Análisis financiero"
+                                         loading="lazy">
+                                    <figcaption>Análisis financiero</figcaption>
+                                </figure>
+                                <figure class="carousel-slide">
+                                    <img src="img/SQL basico.jpg"
+                                         alt="sql basico"
+                                         loading="lazy">
+                                         <figcaption>SQL basico</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-control next" aria-label="Siguiente certificado">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        
+                        <div class="carousel-nav">
+                            <!-- Los puntos de navegación se generan con JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="current-year"></span> Yorkem Zúñiga Mejía. Todos los derechos reservados.</p>
+                
+                <ul class="social-links" role="list">
+                    <li><a href="https://www.linkedin.com/in/yorkem-zu%C3%B1iga-2292b2358/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+                    <li><a href="https://github.com/yorkillerBIG" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Carrusel de certificados
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.querySelector('.carousel-track');
+            const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+            const nextBtn = document.querySelector('.next');
+            const prevBtn = document.querySelector('.prev');
+            const navDotsContainer = document.querySelector('.carousel-nav');
+            
+            let currentSlide = 0;
+            let slideInterval;
+            const slideCount = slides.length;
+            
+            // Crear puntos de navegación
+            function createNavDots() {
+                navDotsContainer.innerHTML = '';
+                
+                slides.forEach((_, index) => {
+                    const dot = document.createElement('div');
+                    dot.classList.add('nav-dot');
+                    if(index === 0) dot.classList.add('active');
+                    dot.addEventListener('click', () => goToSlide(index));
+                    navDotsContainer.appendChild(dot);
+                });
+            }
+            
+            // Mover al slide específico
+            function goToSlide(slideIndex) {
+                track.style.transform = `translateX(-${slideIndex * 100}%)`;
+                
+                // Actualizar estado activo
+                slides.forEach(slide => slide.classList.remove('current-slide'));
+                slides[slideIndex].classList.add('current-slide');
+                
+                const dots = document.querySelectorAll('.nav-dot');
+                dots.forEach(dot => dot.classList.remove('active'));
+                dots[slideIndex].classList.add('active');
+                
+                currentSlide = slideIndex;
+                resetInterval();
+            }
+            
+            // Slide siguiente
+            function nextSlide() {
+                if(currentSlide === slideCount - 1) {
+                    goToSlide(0);
+                } else {
+                    goToSlide(currentSlide + 1);
+                }
+            }
+            
+            // Slide anterior
+            function prevSlide() {
+                if(currentSlide === 0) {
+                    goToSlide(slideCount - 1);
+                } else {
+                    goToSlide(currentSlide - 1);
+                }
+            }
+            
+            // Iniciar auto-avance
+            function startInterval() {
+                slideInterval = setInterval(nextSlide, 5000);
+            }
+            
+            // Reiniciar intervalo
+            function resetInterval() {
+                clearInterval(slideInterval);
+                startInterval();
+            }
+            
+            // Event listeners
+            nextBtn.addEventListener('click', () => {
+                nextSlide();
+                resetInterval();
+            });
+            
+            prevBtn.addEventListener('click', () => {
+                prevSlide();
+                resetInterval();
+            });
+            
+            // Pausar auto-avance al interactuar
+            track.addEventListener('mouseenter', () => clearInterval(slideInterval));
+            track.addEventListener('mouseleave', startInterval);
+            
+            // Inicializar
+            createNavDots();
+            startInterval();
+            
+            // Año actual en el footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Ajustar altura del track del carrusel según la imagen más alta
+            function adjustTrackHeight() {
+                let maxHeight = 0;
+                slides.forEach(slide => {
+                    const img = slide.querySelector('img');
+                    if(img && img.naturalHeight > maxHeight) {
+                        maxHeight = img.naturalHeight;
+                    }
+                });
+                
+                if(maxHeight > 0) {
+                    const container = document.querySelector('.carousel-track-container');
+                    container.style.height = Math.min(maxHeight + 100, 600) + 'px';
+                }
+            }
+            
+            // Esperar a que las imágenes carguen para ajustar altura
+            window.addEventListener('load', adjustTrackHeight);
+        });
+    </script>
+</body>
+</html>
